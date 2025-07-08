@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<SizedApparel.SkeletonDef>
+		<defName>Alien_Cinder</defName>
+		<skeletons>
+			<li>
+				<bodyType>Female</bodyType>
+					<Bones>
+						<li>
+							<name>Vagina</name>
+							<south>
+								<InitialPosition>(0, 0, -0.252)</InitialPosition>
+								<InitialAngle>0</InitialAngle>
+							</south>
+							<north>
+								<InitialPosition>(0, 0, -0.252)</InitialPosition>
+								<InitialAngle>0</InitialAngle>
+							</north>
+							<east>
+								<InitialPosition>(0, 0, -0.252)</InitialPosition>
+								<InitialAngle>0</InitialAngle>
+							</east>
+						</li>
+						<li>
+							<name>Breasts</name>
+							<south>
+                  <!--朝南 X軸正數向左負數向右 ,  圖層調整 ,  Y軸正數向上負數向下 -->
+								<InitialPosition>(0, 0, -0.013)</InitialPosition><!-- -0.025--> 
+								<InitialAngle>0</InitialAngle>
+							</south>
+							<north>
+							    <!--朝北 X軸正數向右負數向左 ,  圖層調整 ,  Y軸正數向上負數向下 -->
+								<InitialPosition>(0, 0, -0.013)</InitialPosition>
+								<InitialAngle>0</InitialAngle>
+							</north>
+							<east>
+								<InitialPosition>(0.013, 0, -0.033)</InitialPosition>
+								<InitialAngle>0</InitialAngle>
+							</east>
+						</li>
+						<li>
+							<name>Anus</name>
+							<south>
+								<InitialPosition>(0, 0, 0)</InitialPosition>
+								<InitialAngle>0</InitialAngle>
+							</south>
+							<north>
+								<InitialPosition>(0, 0, -0.226)</InitialPosition>
+								<InitialAngle>0</InitialAngle>
+							</north>
+							<east>
+								<InitialPosition>(0, 0, 0)</InitialPosition>
+								<InitialAngle>0</InitialAngle>
+							</east>
+						</li>
+						<li>
+							<name>Penis</name>
+							<south>
+								<InitialPosition>(0, 0, -0.243)</InitialPosition>  
+								<InitialAngle>0</InitialAngle>
+							</south>
+							<north>
+								<InitialPosition>(0, 0, -0.243)</InitialPosition>
+								<InitialAngle>0</InitialAngle>
+							</north>
+							<east>
+								<InitialPosition>(0.063, 0, -0.239)</InitialPosition>
+								<InitialAngle>0</InitialAngle>
+							</east>
+						</li>	
+						<li>
+							<name>Balls</name>
+							<south>
+								<InitialPosition>(0, 0, -0.243)</InitialPosition>  
+								<InitialAngle>0</InitialAngle>
+							</south>
+							<north>
+								<InitialPosition>(0, 0, -0.243)</InitialPosition>
+								<InitialAngle>0</InitialAngle>
+							</north>
+							<east>
+								<InitialPosition>(0.063, 0, -0.239)</InitialPosition>
+								<InitialAngle>0</InitialAngle>
+							</east>
+						</li>
+						<li>
+							<name>Belly</name>
+							<south>
+							<!--朝南 X軸正數向左負數向右 ,  圖層調整 ,  Y軸正數向上負數向下 -->
+								<InitialPosition>(0, 0, 0.03)</InitialPosition>  
+								<InitialAngle>0</InitialAngle>
+							</south>
+							<north>
+								<InitialPosition>(0, 0, 0)</InitialPosition>
+								<InitialAngle>0</InitialAngle>
+							</north>
+							<east>
+							<!--朝東 X軸正數向右負數向左 ,  圖層調整 ,  Y軸正數向上負數向下 -->
+								<InitialPosition>(-0.005, 0, 0)</InitialPosition>
+								<InitialAngle>0</InitialAngle>
+							</east>
+						</li>
+						<li>
+							<name>PubicHair</name>
+							<south>
+								<InitialPosition>(0, 0, -0.213</InitialPosition><!-- -0.056--> 
+								<InitialAngle>0</InitialAngle>
+							</south>
+							<north>
+								<InitialPosition>(0, 0, 0)</InitialPosition><!-- -0.056-->
+								<InitialAngle>0</InitialAngle>
+							</north>
+							<east>
+								<InitialPosition>(0.025, 0, -0.01)</InitialPosition><!-- -0.056--> 
+								<InitialAngle>0</InitialAngle>
+							</east>
+						</li>
+					</Bones>
+			</li>
+			<li>
+				<bodyType>Child</bodyType>
+				   <Bones>
+				   </Bones>
+			</li>
+		</skeletons>
+	</SizedApparel.SkeletonDef>
+</Defs>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>SizedApparel-Cinders</name>
+	<author>MO,Talos,Nya,Nesi</author>
+  <supportedVersions>
+		<li>1.5</li>
+  </supportedVersions>
+	<packageId>SizedApparel.Cinders.Race</packageId>
+	<description>
+Cinders of the Embergarden 的 SizedApparel 支援Mod。
+	</description>
+	<modDependencies>
+		<li>
+			<packageId>BreadMo.Cinders</packageId>
+			<displayName>Cinders of the Embergarden</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3421959154</steamWorkshopUrl>
+		</li>
+		
+		<li>
+			<packageId>OTYOTY.SizedApparel</packageId>
+			<displayName>Sized Apparel for RJW (SAR version)</displayName>
+			<downloadUrl>/</downloadUrl>
+		</li>
+		
+		<li>
+			<packageId>erdelf.HumanoidAlienRaces</packageId>
+			<displayName>Humanoid Alien Races</displayName>
+			<downloadUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=839005762</downloadUrl>
+		</li>
+    </modDependencies>
+		<loadAfter>
+			<li>BreadMo.Cinders</li>
+			<li>OTYOTY.SizedApparel</li>
+			<li>MO.Size.Valentine.Apparel</li>
+			<li>erdelf.HumanoidAlienRaces</li>
+		</loadAfter>
+	<incompatibleWith>
+	
+	</incompatibleWith>
+</ModMetaData>

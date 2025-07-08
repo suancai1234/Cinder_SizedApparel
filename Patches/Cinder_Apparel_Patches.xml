@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!-- SizedApparel_ShowBelly
+	-不要藏肚子，即使衣服盖住了躯干
+
+SizedApparel_ShowPrivateCrotch
+	-不要藏胯部（生殖器和肛门），即使衣服盖住生殖器
+	
+SizedApparel_IgnorBreastSize
+	-尺码服装mod在计算服装的胸部尺寸时会忽略服装
+	-这个标签对跳过很有用。一个很好的例子是ratkin盾牌（盾牌覆盖乳房） 
+		
+SizedApparel_RenderAsCorset
+    -緊身胸衣放在襯衫上方但在襯衫胸部下方 。 不過可能有個小問題 。 。 。 胸部部分紋理也被放置在緊身胸衣上方     
+	-->
+<Patch>
+ <Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Cinders of the Embergarden</li>
+	</mods>	
+       <match Class="PatchOperationSequence">
+        <success>Normal</success>
+     <operations>
+<!-- 女仆-->
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName = "Cinder_Apparel_MaidCostume"]/apparel/tags</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "Cinder_Apparel_MaidCostume"]/apparel</xpath>
+          <value>
+            <tags>
+			  <li>SizedApparel_ShowBelly</li>
+			  <li>SizedApparel_IgnorBreastSize</li>
+            </tags>
+          </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "Cinder_Apparel_MaidCostume"]/apparel/tags</xpath>
+          <value>
+			  <li>SizedApparel_ShowBelly</li>
+			  <li>SizedApparel_IgnorBreastSize</li>
+          </value>
+        </match>
+      </li>
+	  
+<!--工装外套-->	  
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName = "Cinder_Apparel_WorkwearJacket"]/apparel/tags</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "Cinder_Apparel_WorkwearJacket"]/apparel</xpath>
+          <value>
+            <tags>
+			  <li>SizedApparel_ShowBelly</li>
+			  <li>SizedApparel_ShowPrivateCrotch</li>
+              <li>SizedApparel_IgnorBreastSize</li>
+            </tags>
+          </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "Cinder_Apparel_WorkwearJacket"]/apparel/tags</xpath>
+          <value>
+			  <li>SizedApparel_ShowBelly</li>
+			  <li>SizedApparel_ShowPrivateCrotch</li>
+              <li>SizedApparel_IgnorBreastSize</li>
+          </value>
+        </match>
+      </li>
+
+<!--幽灵-->	  
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName = "Cinder_Apparel_GhostUnderwear"]/apparel/tags</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "Cinder_Apparel_GhostUnderwear"]/apparel</xpath>
+          <value>
+            <tags>
+			  <li>SizedApparel_ShowBelly</li>
+			  <li>SizedApparel_ShowPrivateCrotch</li>
+			  <li>SizedApparel_IgnorBreastSize</li>
+            </tags>
+          </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "Cinder_Apparel_GhostUnderwear"]/apparel/tags</xpath>
+          <value>
+			  <li>SizedApparel_ShowBelly</li>
+			  <li>SizedApparel_ShowPrivateCrotch</li>
+			  <li>SizedApparel_IgnorBreastSize</li>
+          </value>
+        </match>
+      </li>
+	  
+<!--幽灵斗篷-->		  
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName = "Cinder_Apparel_GhostCloak"]/apparel/tags</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "Cinder_Apparel_GhostCloak"]/apparel</xpath>
+          <value>
+            <tags>
+			  <li>SizedApparel_ShowBelly</li>
+			  <li>SizedApparel_ShowPrivateCrotch</li>
+              <li>SizedApparel_IgnorBreastSize</li>
+            </tags>
+          </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "Cinder_Apparel_GhostCloak"]/apparel/tags</xpath>
+          <value>
+			  <li>SizedApparel_ShowBelly</li>
+			  <li>SizedApparel_ShowPrivateCrotch</li>
+              <li>SizedApparel_IgnorBreastSize</li>
+          </value>
+        </match>
+      </li>
+
+<!--异域-->		  
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName = "Cinder_Apparel_Exotic"]/apparel/tags</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "Cinder_Apparel_Exotic"]/apparel</xpath>
+          <value>
+            <tags>
+			  <li>SizedApparel_ShowPrivateCrotch</li>
+			  <li>SizedApparel_IgnorBreastSize</li>
+            </tags>
+          </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "Cinder_Apparel_Exotic"]/apparel/tags</xpath>
+          <value>
+			  <li>SizedApparel_ShowPrivateCrotch</li>
+			  <li>SizedApparel_IgnorBreastSize</li>
+          </value>
+        </match>
+      </li>
+
+<!--投影-->		  
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName = "Cinder_Apparel_Projection"]/apparel/tags</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "Cinder_Apparel_Projection"]/apparel</xpath>
+          <value>
+            <tags>
+			  <li>SizedApparel_ShowBelly</li>
+              <li>SizedApparel_IgnorBreastSize</li>
+            </tags>
+          </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "Cinder_Apparel_Projection"]/apparel/tags</xpath>
+          <value>
+			  <li>SizedApparel_ShowBelly</li>
+              <li>SizedApparel_IgnorBreastSize</li>
+          </value>
+        </match>
+      </li>
+	  
+<!--星空披肩-->		  
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName = "Cinder_Apparel_StarryShawl"]/apparel/tags</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "Cinder_Apparel_StarryShawl"]/apparel</xpath>
+          <value>
+            <tags>
+              <li>SizedApparel_ShowBelly</li>
+			  <li>SizedApparel_ShowPrivateCrotch</li>
+			  <li>SizedApparel_IgnorBreastSize</li>
+            </tags>
+          </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "Cinder_Apparel_StarryShawl"]/apparel/tags</xpath>
+          <value>
+            <li>SizedApparel_ShowBelly</li>
+			<li>SizedApparel_ShowPrivateCrotch</li>
+			<li>SizedApparel_IgnorBreastSize</li>
+          </value>
+        </match>
+      </li>
+
+<!--雪夜披肩-->		  
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName = "Cinder_Apparel_SnowyNightShawl"]/apparel/tags</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "Cinder_Apparel_SnowyNightShawl"]/apparel</xpath>
+          <value>
+            <tags>
+			  <li>SizedApparel_ShowPrivateCrotch</li>
+            </tags>
+          </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "Cinder_Apparel_SnowyNightShawl"]/apparel/tags</xpath>
+          <value>
+			<li>SizedApparel_ShowPrivateCrotch</li>
+          </value>
+        </match>
+      </li>
+	  
+      </operations>
+     </match> 
+  </Operation>
+</Patch>
